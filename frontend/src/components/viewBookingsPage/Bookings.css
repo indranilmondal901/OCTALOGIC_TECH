@@ -19,7 +19,7 @@ table {
 
 th,
 td {
-    background-color: #f8f8f8 ;
+    background-color: #f8f8f8;
     padding: 10px;
     text-align: left;
     border: 1px solid #929292;
@@ -32,4 +32,46 @@ th {
 
 tbody tr:hover {
     color: red;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .bookings-container {
+        padding: 10px;
+    }
+
+    #booking-h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bookings-container {
+        padding: 5px;
+    }
+
+    #booking-h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    table {
+        font-size: 0.7rem;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
 }
