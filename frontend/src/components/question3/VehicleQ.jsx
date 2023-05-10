@@ -24,7 +24,7 @@ const VehicleQ = () => {
 
   const handelNext = () => {
     if (type) {
-      console.log(type);
+      // console.log(type);
       dispatch({
         type: "VEHICLE_TYPE",
         payload: { type }

@@ -12,12 +12,11 @@ const DateRange = () => {
 
   const handleNext = () => {
     if (startDate && endDate) {
-      console.log(startDate, endDate)
+      // console.log(startDate, endDate)
       dispatch({
         type: "DATE_RANGER",
         payload: { startDate, endDate },
       });
-      console.log(state.vehicle)
       axios.post("https://octalogic-4rhu.onrender.com/bookings", {
         userFirstName: state.userFirstName,
         userLastName: state.userLastName,

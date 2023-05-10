@@ -7,7 +7,6 @@ import "../question4/VehicleModelQ.css";
 const VehicleModelQ = () => {
   const navigate = useNavigate();
   const { state, dispatch } = useContext(Context);
-  console.log(state.type);
   const type = state.type;
 
   const [data, setData] = useState([]);
@@ -16,7 +15,7 @@ const VehicleModelQ = () => {
   useEffect(() => {
     axios.get(`https://octalogic-4rhu.onrender.com/vehicles/types/${type}`)
       .then((res) => {
-        console.log(res.data)
+        // console.log(res.data)
         setData(res.data);
       }).catch((err) => {
         console.log(err)

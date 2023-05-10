@@ -19,7 +19,6 @@ const WheelQ = () => {
       window.alert("Choose One")
     }
   }
-  console.log(state.userFirstName)
 
   return (
     <div className="q-wrapper">
