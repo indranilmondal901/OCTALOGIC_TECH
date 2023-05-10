@@ -14,7 +14,7 @@ const VehicleModelQ = () => {
   const [model, setmodel] = useState("");
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/vehicles/types/${type}`)
+    axios.get(`https://octalogic-4rhu.onrender.com/vehicles/types/${type}`)
       .then((res) => {
         console.log(res.data)
         setData(res.data);

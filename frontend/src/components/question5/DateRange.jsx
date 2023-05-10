@@ -18,7 +18,7 @@ const DateRange = () => {
         payload: { startDate, endDate },
       });
       console.log(state.vehicle)
-      axios.post("http://localhost:8080/bookings", {
+      axios.post("https://octalogic-4rhu.onrender.com/bookings", {
         userFirstName: state.userFirstName,
         userLastName: state.userLastName,
         vehicleId: state.vehicle,

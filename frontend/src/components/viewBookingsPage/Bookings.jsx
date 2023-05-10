@@ -6,7 +6,7 @@ const Bookings = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/bookings")
+        axios.get("https://octalogic-4rhu.onrender.com/bookings")
             .then((res) => {
                 setData(res.data);
             })
