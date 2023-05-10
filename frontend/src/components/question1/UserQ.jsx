@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../../context/context";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "../question1/UserQ.css"
 
 const UserQ = () => {
@@ -51,6 +51,9 @@ const UserQ = () => {
         NEXT
       </button>
       </div>
+      <Link to="/allbooking">
+      <p>Show All Bookinngs</p>
+      </Link>
     </div>
   );
 };
