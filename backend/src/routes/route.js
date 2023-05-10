@@ -40,6 +40,29 @@ router.get('/vehicles/:id', async (req, res) => {
     }
 });
 
+// Get vehicles by number of wheels
+router.get('/vehicles/wheels/:wheels', async (req, res) => {
+    try {
+        const vehicles = await Vehicle.find({ wheels: req.params.wheels });
+        res.send(vehicles);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal server error');
+    }
+});
+
+// Get vehicles by type
+router.get('/vehicles/types/:type', async (req, res) => {
+    try {
+        const vehicles = await Vehicle.find({ type: req.params.type});
+        res.send(vehicles);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal server error');
+    }
+});
+
+
 // Create a booking
 router.post('/bookings', async (req, res) => {
     try {

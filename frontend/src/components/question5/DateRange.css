@@ -1,0 +1,18 @@
+#q5-h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#q5-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#q5-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
