@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("../public/asset/background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,4 +34,25 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+
+    .q-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .q-wrapper {
+        width: 100%;
+        margin: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
 }
